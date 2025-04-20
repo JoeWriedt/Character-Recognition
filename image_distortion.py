@@ -4,7 +4,7 @@ def line_strip(line: int, data: list) -> list:
      length = len(data)
      for i in range(length):
           for j in range(int(len(data[0])**0.5)):
-               new_data[i][int(len(data[0])**0.5)*(line-1)+j] = 1 # random, 0 or 1
+               new_data[i][int(len(data[0])**0.5)*(line-1)+j] = 1 # or 0
 
      return new_data
 
@@ -14,7 +14,7 @@ def collumn_strip(collumn: int, data: list) -> list:
      length = len(data)
      for i in range(length):
           for j in range(int(len(data[0])**0.5)):
-               new_data[i][j*(int(len(data[0])**0.5))+collumn-1] = 1 # random, 0 or 1
+               new_data[i][j*(int(len(data[0])**0.5))+collumn-1] = 1 # or 0
      
      return new_data
 
